@@ -80,18 +80,23 @@ The minimum value is `1000`.
 
 For a complete overview of all available options of the `generate:module` command, visit the xref:{url_references_commander_commands_module}[Lisk Commander command reference].
 
-As an example, we use the module name `hello` and the module ID `1000`:
+[//]: # (As I was generating a module, generating it with an ID resulted into an error:)
+[//]: # (Error: Unexpected argument: 1000)
+[//]: # (See more help with --help)
+[//]: # (But once i removed the ID, everything worked as expected)
+
+As an example, we use the module name `hello` 
 
 [[generate-module]]
 [source,bash]
 ----
-lisk generate:module hello 1000
+lisk generate:module hello 
 ----
 
 This will generate the following files:
 
 ----
-Creating module skeleton with module name "hello" and module ID "1000"
+Creating module skeleton with module name "hello"
 Using template "lisk-ts"
 Generating module skeleton.
 Registering module...
